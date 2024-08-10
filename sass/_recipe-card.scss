@@ -1,0 +1,110 @@
+.recipe-card {
+
+  &__header {
+
+    &-img {
+      margin-bottom: 40px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+  }
+  &__description {
+
+    &-title {
+      margin-bottom: 24px;
+      @include text-header-title;
+    }
+    
+    &-text {
+      margin-bottom: 32px;
+      @include text-sm;
+    }
+  }
+  &__preparation {
+    margin-bottom: 32px;
+    padding: 24px;
+    background-color: $primary-50;
+
+    &-title {
+      margin-bottom: 16px;
+      @include text-preparation-title;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      gap: 8px 0;
+      @include text-sm;
+
+      &-item {
+        padding-left: 16px;
+
+        & span {
+          font-weight: $font-weight-bold;
+        }
+      }
+    }
+  }
+  &__ingredients {
+
+    &-title {
+      margin-bottom: 24px;
+      @include text-title-lg;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px 0;
+      margin-bottom: 32px;
+      padding-left: 20px;
+      @include text-sm;
+
+      &-item {
+        padding-left: 16px;
+      }
+    }
+  }
+  &__instructions {
+
+    &-title {
+      margin-bottom: 24px;
+      @include text-title-lg;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px 0;
+      margin-bottom: 32px;
+      padding-left: 20px;
+      @include text-sm;
+
+      &-item {
+        padding-left: 16px;
+      }
+    }
+  }
+  &__nutrition {
+
+    &-title {
+      margin-bottom: 24px;
+      @include text-title-lg;
+    }
+
+    &-text {
+      margin-bottom: 12px;
+      @include text-sm;
+    }
+    &-table {
+
+      & span {
+        color: $brown-800;
+        font-weight: $font-weight-bold;
+        line-height: $line-height-150;
+      }
+    }
+  }
+}

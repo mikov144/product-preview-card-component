@@ -1,0 +1,51 @@
+// Typography mixins
+@mixin text-base {
+	font-family: $font-family-outfit;
+	font-weight: $font-weight-regular;
+	color: $secondary-600;
+  line-height: $line-height-100;
+}
+
+@mixin text-header-title {
+  @include text-base;
+  font-family: $font-family-young;
+  font-size: $font-size-xl;
+  color: $secondary-900;
+}
+
+@mixin text-preparation-title {
+  @include text-base;
+  font-size: $font-size-md;
+  font-weight: $font-weight-semi-bold;
+  color: $primary-800;
+}
+
+@mixin text-title-lg {
+  @include text-base;
+  font-family: $font-family-young;
+  font-size: $font-size-lg;
+  color: $brown-800;
+}
+
+@mixin text-sm {
+  @include text-base;
+  font-size: $font-size-sm;
+  line-height: $line-height-150;
+}
+
+@mixin text-footer {
+  @include text-base;
+  font-size: $font-size-xs;
+}
+
+// Container media query mixin
+@mixin container-mq {
+  @each $breakpoint, $breakpoint-value in $breakpoints {
+    $max-width-value: map-get($container-max-widths, $breakpoint);
+    @if $breakpoint-value and $max-width-value {
+      @media screen and (max-width: $breakpoint-value) {
+        max-width: $max-width-value;
+      }
+    }
+  }
+}
