@@ -1,6 +1,6 @@
 // Typography
-$font-family-young: 'Young Serif', sans-serif;
-$font-family-outfit: 'Outfit', sans-serif;
+$font-family-primary: 'Montserrat', sans-serif;
+$font-family-secondary: 'Fraunces', sans-serif;
 $font-size-xl: clamp(36px, 2.08vw, 40px);
 $font-size-lg: 28px;
 $font-size-md: 20px;
@@ -14,13 +14,11 @@ $line-height-100: 100%;
 $letter-spacing: 0px;
 
 // Colors
-$primary-800: #7A284E;
-$primary-50: #FFF7FB;
-$secondary-900: #312E2C;
-$secondary-600: #5F564D;
-$secondary-150: #E3DDD7;
-$secondary-100: #F3E5D7;
-$brown-800: #854632;
+$primary-900: #1C232B;
+$primary-600: #1A4032;
+$primary-300: #3D8168;
+$secondary: #6C7289;
+$background: #F2EAE2;
 $white: #FFFFFF;
 
 // Containers widths
