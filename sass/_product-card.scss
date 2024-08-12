@@ -1,109 +1,68 @@
 .product-card {
+  display: flex;
 
-  &__header {
+  .product-card__product-picture {
 
-    &-img {
-      margin-bottom: 40px;
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
+    .product-card__product-picture-img {
+      max-width: 300px;
+      border-radius: 10px 0 0 10px;
     }
   }
-  &__description {
+  .product-card__description {
+    padding: 32px;
+    width: 100%;
 
-    &-title {
+    .product-card__description-category {
+      margin-bottom: 20px;
+      @include text-category;
+    }
+
+    .product-card__description-title {
       margin-bottom: 24px;
-      @include text-header-title;
-    }
-    
-    &-text {
-      margin-bottom: 32px;
-      @include text-sm;
-    }
-  }
-  &__preparation {
-    margin-bottom: 32px;
-    padding: 24px;
-    background-color: $primary-50;
-
-    &-title {
-      margin-bottom: 16px;
-      @include text-preparation-title;
+      @include text-title;
     }
 
-    &-list {
+    .product-card__description-text {
+      margin-bottom: 29px;
+      @include text-description;
+    }
+
+    .product-card__description-price {
       display: flex;
-      flex-direction: column;
-      padding: 20px;
-      gap: 8px 0;
-      @include text-sm;
+      align-items: center;
+      gap: 0 19px;
+      margin-bottom: 30px;
 
-      &-item {
-        padding-left: 16px;
+      .product-card__description-price-new {
+        @include text-price-new;
+      }
 
-        & span {
-          font-weight: $font-weight-bold;
+      .product-card__description-price-old {
+        @include text-price-old;
+      }
+    }
+    .product-card__description-cart {
+      display: flex;
+      align-items: center;
+      gap: 0 12px;
+      padding: 15px 62px;
+      max-width: 236px;
+      width: 100%;
+      border-radius: 8px;
+      background-color: $primary-300;
+
+      @media (hover: hover) {
+        &:hover {
+          background-color: $primary-600;
+        }
+  
+        &:active {
+          opacity: 0.5;
         }
       }
-    }
-  }
-  &__ingredients {
 
-    &-title {
-      margin-bottom: 24px;
-      @include text-title-lg;
-    }
-
-    &-list {
-      display: flex;
-      flex-direction: column;
-      gap: 8px 0;
-      margin-bottom: 32px;
-      padding-left: 20px;
-      @include text-sm;
-
-      &-item {
-        padding-left: 16px;
-      }
-    }
-  }
-  &__instructions {
-
-    &-title {
-      margin-bottom: 24px;
-      @include text-title-lg;
-    }
-
-    &-list {
-      display: flex;
-      flex-direction: column;
-      gap: 8px 0;
-      margin-bottom: 32px;
-      padding-left: 20px;
-      @include text-sm;
-
-      &-item {
-        padding-left: 16px;
-      }
-    }
-  }
-  &__nutrition {
-
-    &-title {
-      margin-bottom: 24px;
-      @include text-title-lg;
-    }
-
-    &-text {
-      margin-bottom: 12px;
-      @include text-sm;
-    }
-    &-table {
-
-      & span {
-        color: $brown-800;
-        font-weight: $font-weight-bold;
-        line-height: $line-height-150;
+      .product-card__description-cart-text {
+        @include text-cart;
       }
     }
   }

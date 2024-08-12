@@ -1,41 +1,56 @@
 // Typography mixins
 @mixin text-base {
 	font-family: $font-family-primary;
-	font-weight: $font-weight-regular;
-	color: $secondary-600;
-  line-height: $line-height-100;
+  font-size: $font-size-xs;
+	font-weight: $font-weight-medium;
+	color: $secondary;
+  line-height: $line-height-auto;
 }
 
-@mixin text-header-title {
+@mixin text-category {
   @include text-base;
-  font-family: $font-family-young;
-  font-size: $font-size-xl;
-  color: $secondary-900;
+  letter-spacing: $letter-spacing;
 }
 
-@mixin text-preparation-title {
+@mixin text-title {
   @include text-base;
+  font-family: $font-family-secondary;
   font-size: $font-size-md;
-  font-weight: $font-weight-semi-bold;
-  color: $primary-800;
+  font-weight: $font-weight-bold;
+  color: $primary-900;
+  line-height: $line-height-32;
 }
 
-@mixin text-title-lg {
-  @include text-base;
-  font-family: $font-family-young;
-  font-size: $font-size-lg;
-  color: $brown-800;
-}
-
-@mixin text-sm {
+@mixin text-description {
   @include text-base;
   font-size: $font-size-sm;
-  line-height: $line-height-150;
+  line-height: $line-height-23;
+}
+
+@mixin text-price-new {
+  @include text-base;
+  font-family: $font-family-secondary;
+  font-size: $font-size-md;
+  font-weight: $font-weight-bold;
+  color: $primary-300;
+  line-height: $line-height-32;
+}
+
+@mixin text-price-old {
+  @include text-base;
+  text-decoration: line-through;
+  line-height: $line-height-23;
+}
+
+@mixin text-cart {
+  @include text-base;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-bold;
+	color: $white;
 }
 
 @mixin text-footer {
   @include text-base;
-  font-size: $font-size-xs;
 }
 
 // Container media query mixin

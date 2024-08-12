@@ -1,17 +1,15 @@
 // Typography
 $font-family-primary: 'Montserrat', sans-serif;
 $font-family-secondary: 'Fraunces', sans-serif;
-$font-size-xl: clamp(36px, 2.08vw, 40px);
-$font-size-lg: 28px;
-$font-size-md: 20px;
-$font-size-sm: 16px;
-$font-size-xs: 0.8rem;
-$font-weight-regular: 400;
-$font-weight-semi-bold: 600;
+$font-size-md: 2rem;;
+$font-size-sm: 0.875rem;
+$font-size-xs: 0.75rem;
+$font-weight-medium: 500;
 $font-weight-bold: 700;
-$line-height-150: 150%;
-$line-height-100: 100%;
-$letter-spacing: 0px;
+$line-height-32: 32px;
+$line-height-23: 23px;
+$line-height-auto: auto;
+$letter-spacing: 5px;
 
 // Colors
 $primary-900: #1C232B;
@@ -23,17 +21,17 @@ $white: #FFFFFF;
 
 // Containers widths
 $container-max-widths: (
-  xs: 290px,
-  sm: 375px,
-  md: 616px,
-  lg: 736px,
+  xs: 200px,
+  sm: 320px,
+  md: 343px,
+  lg: 600px,
 );
 
 // Breakpoints
 $breakpoints: (
-  xs: 400px,
-  sm: 640px,
-  md: 1140px,
+  xs: 200px,
+  sm: 320px,
+  md: 640px,
 );
 
 // Spacing

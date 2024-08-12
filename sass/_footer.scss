@@ -3,16 +3,12 @@
   bottom: 10px;
   @include text-footer;
 
-  @media screen and (max-width: 640px) {
-    display: none;
-  }
-
   & span {
-    color: $secondary-900;
+    color: $primary-300;
 
     @media (hover: hover) {
       &:hover {
-        color: $brown-800;
+        color: $primary-600;
         cursor: pointer;
       }
 
