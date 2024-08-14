@@ -1,11 +1,21 @@
 .product-card {
   display: flex;
 
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+  }
+
   .product-card__product-picture {
 
     .product-card__product-picture-img {
       max-width: 300px;
       border-radius: 10px 0 0 10px;
+
+      @media screen and (max-width: 640px) {
+        max-width: 343px;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+      }
     }
   }
   .product-card__description {
@@ -44,12 +54,17 @@
     .product-card__description-cart {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 0 12px;
       padding: 15px 62px;
       max-width: 236px;
       width: 100%;
       border-radius: 8px;
       background-color: $primary-300;
+
+      @media screen and (max-width: 640px) {
+        max-width: 295px;
+      }
 
       @media (hover: hover) {
         &:hover {

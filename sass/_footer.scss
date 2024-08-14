@@ -3,6 +3,10 @@
   bottom: 10px;
   @include text-footer;
 
+  @media screen and (max-width: 300px) {
+    display: none;
+  }
+
   & span {
     color: $primary-300;
 
