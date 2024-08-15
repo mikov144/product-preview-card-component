@@ -42,7 +42,7 @@
   line-height: $line-height-23;
 }
 
-@mixin text-cart {
+@mixin text-btn {
   @include text-base;
   font-size: $font-size-sm;
   font-weight: $font-weight-bold;
